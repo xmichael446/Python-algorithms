@@ -6,12 +6,11 @@ def bin_search(arr, item):
 		guess = arr[mid]
 		if guess == item:
 			return mid
-		elif guess > high:
+		elif guess > item:
 			high = mid - 1
 		else:
 			low = mid + 1
-	return None
+	return -1
 
-nums = [1, 3, 5, 7, 9, 11, 13, 15]
-
-print(bin_search(nums, 9))
+nums = [i for i in range(21)]
+print(guess)

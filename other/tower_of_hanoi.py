@@ -1,4 +1,4 @@
-def hanoi(n , source, dest, aux): 
+def hanoi(n, source, dest, aux): 
 	if n==1: 
 		print("Disk 1 from peg",source,"to peg",dest)
 		return "Done"
