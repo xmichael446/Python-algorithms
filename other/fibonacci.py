@@ -5,5 +5,3 @@ def fib(n):
 		a, b = b, a+b
 		arr.append(a)
 	return arr
-
-print(fib(10))
