@@ -12,6 +12,7 @@ def bin_search(arr, item):
 			low = mid + 1
 	return -1
 
+
 nums = [i for i in range(21)]
 
 guess = bin_search(nums, 13)

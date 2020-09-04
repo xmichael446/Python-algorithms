@@ -8,5 +8,6 @@ def insertion_sort(arr):
 			else:
 				break
 	return arr
-	
+
+
 print(insertion_sort([6, 2, 3, 8, 5, 1, 7, 4]))

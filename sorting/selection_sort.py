@@ -7,10 +7,13 @@ def find_smallest(arr):
 			index = i
 	return index
 
+
 def s_sort(arr):
 	new_arr = []
 	for i in range(len(arr)):
 		smallest = find_smallest(arr)
 		new_arr.append(arr.pop(smallest))
 	return new_arr
+
+
 print(s_sort([2, 7, 1, 3, 6, 9, 4]))

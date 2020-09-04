@@ -1,16 +1,15 @@
 # Print all possible pairs of elements in a list
 
-def permute(list, s):
-	if list == 1:
-		return s
+def permute(n, arr):
+	if n == 1:
+		return arr
 	else:
-		return [ y + x
-			for y in permute(1, s)
-			for x in permute(list - 1, s)
-			]
+		return [y + x for y in permute(1, arr)
+										for x in permute(n - 1, arr)
+										]
+
 
 # Without any permutation
 print(permute(1, ['1', '2', '3']))
 # With permutation
 print(permute(2, ['1', '2', '3']))
-
